@@ -1,0 +1,22 @@
+
+
+body {
+    width: 400px;
+    margin: 0 auto;
+    padding: 4rem 0;
+}
+
+button {
+    padding: 4px 6px;
+    background-color: lightgreen;
+    border: 1px solid darkgreen;
+    font-size: 1.25rem;
+    width: 100%;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+#greeting {
+    text-align: center;
+    font-size: 2rem;
+}
