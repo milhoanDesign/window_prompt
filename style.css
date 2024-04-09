@@ -16,6 +16,12 @@ button {
     cursor: pointer;
 }
 
+.input-wrapper {
+    display: flex;
+    margin-bottom: 2rem;
+    gap: 10px;
+}
+
 #greeting {
     text-align: center;
     font-size: 2rem;

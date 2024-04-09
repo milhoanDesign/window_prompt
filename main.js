@@ -1,15 +1,22 @@
+const nameInput = document.getElementById("nameInput");
+        const greetButton = document.getElementById("greetButton");
+        const greetingDiv = document.getElementById("greeting");
 
-const button = document.querySelector("button");
+        function greet() {
+            const name = nameInput.value.trim();
 
-function greet() {
-    const name = prompt("What is your name?");
-    
-    if (name) { // Check if the user entered a name
-        const greeting = document.querySelector("#greeting");
-        greeting.textContent = `Hello ${name}, nice to meet you!`;
-    } else {
-        alert("Please enter your name.");
-    }
-}
+            if (name) { // Check if the user entered a name
+                greetingDiv.textContent = `Hello ${name}, nice to meet you!`;
+            } else {
+                greetingDiv.textContent = "Please enter your name.";
+            }
+        }
 
-button.addEventListener('click', greet); 
+        greetButton.addEventListener('click', greet);
+
+        // Optionally, you can allow pressing Enter key to submit the name
+        nameInput.addEventListener('keypress', function(event) {
+            if (event.key === 'Enter') {
+                greet();
+            }
+        });
