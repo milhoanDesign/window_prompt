@@ -6,7 +6,7 @@ function greet() {
     const name = nameInput.value.trim();
 
     if (name) { // Check if the user entered a name
-        greetingDiv.textContent = `Hello ${name}, nice to meet you!`;
+        greetingDiv.textContent = `Welcome to ${name}'s bar and grill`;
         // Add a class to trigger a CSS animation
         greetingDiv.classList.add('fade-in');
         // Remove the class after a delay to allow the animation to play
