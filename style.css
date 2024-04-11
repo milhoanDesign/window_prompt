@@ -51,3 +51,16 @@ header {
     background: aqua;
     padding: 1rem;
   }
+
+  .fade-in {
+    animation: fadeInAnimation 1s ease-in-out;
+}
+
+@keyframes fadeInAnimation {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
